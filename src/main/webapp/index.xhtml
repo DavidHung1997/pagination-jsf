@@ -23,19 +23,19 @@
 
             <nav aria-label="...">
                 <ul class="pagination">
-                    <li class="page-item #{pageBean.pageCurrent == 1 ? 'disabled' : ''}">
+                    <li class="page-item #{pageBean.paging.pageCurrent == 1 ? 'disabled' : ''}">
                         <h:commandLink class="page-link" tabindex="-1" value="Previous" >
                             <f:ajax listener="#{pageBean.previousPage()}" render="@form"></f:ajax>
                         </h:commandLink>
                     </li>
-                    <ui:repeat value="#{pageBean.listPage}" var="item" size="5">
-                        <li class="page-item #{pageBean.pageCurrent == item ? 'active' : ''}" aria-current="page">
+                    <ui:repeat value="#{pageBean.paging.listPage}" var="item" size="5">
+                        <li class="page-item #{pageBean.paging.pageCurrent == item ? 'active' : ''}" aria-current="page">
                             <h:commandLink class="page-link" value="#{item}">
                                 <f:ajax listener="#{pageBean.pageCurrentSelected(item)}" render="@form"></f:ajax>
                             </h:commandLink>
                         </li>
                     </ui:repeat>
-                    <li class="page-item #{pageBean.pageCurrent == pageBean.totalPage  ? 'disabled' : ''}">
+                    <li class="page-item #{pageBean.paging.pageCurrent == pageBean.paging.totalPage  ? 'disabled' : ''}">
                         <h:commandLink class="page-link" value="Next">
                             <f:ajax listener="#{pageBean.nextPage()}" render="@form"></f:ajax>
                         </h:commandLink>

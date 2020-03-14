@@ -1,3 +1,4 @@
-/home/hunglv/NetBeansProjects/mavenproject2/paging/src/main/java/com/mycompany/paging/PageBean.java
-/home/hunglv/NetBeansProjects/mavenproject2/paging/src/main/java/com/mycompany/paging/JAXRSConfiguration.java
-/home/hunglv/NetBeansProjects/mavenproject2/paging/src/main/java/com/mycompany/paging/resources/JavaEE8Resource.java
+/home/hunglv/NetBeansProjects/mavenproject2/pagination/src/main/java/com/mycompany/paging/PageBean.java
+/home/hunglv/NetBeansProjects/mavenproject2/pagination/src/main/java/com/mycompany/paging/resources/JavaEE8Resource.java
+/home/hunglv/NetBeansProjects/mavenproject2/pagination/src/main/java/com/mycompany/paging/Paging.java
+/home/hunglv/NetBeansProjects/mavenproject2/pagination/src/main/java/com/mycompany/paging/JAXRSConfiguration.java
